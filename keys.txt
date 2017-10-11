@@ -1,0 +1,9 @@
+//twitter keys
+ Consumer Key (API Key) iYO892JZNy1rDATeXj9aIqIFm
+Consumer Secret (API Secret) hxj7tFa7WL7Pw1mV1Kevz01ZBh0DqnAkbFnjGyjNceYL2Q8rzN 
+ Access Token 917380051636809728-BA0lZAIue0KSWelQyypRGToUg4g6hMp
+Access Token Secret EWH2G59igTUAzBoerp2SnUbEOYKVfVqqapbTAVpLKOHA4 
+
+//spotify keys
+Client ID 51ac52b96efd4eaca71848d0659f69a7
+Client Secret 23b747190f3441199b2b75f2e0f65a2c
