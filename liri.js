@@ -54,7 +54,7 @@ function spotifyThis() {
         song = 'The Sign ace';
     }
     //get's the info from spotify and then parses out the needed data
-    var queryURL = "https://api.spotify.com/v1/search?query=" + song + "&type=track&artist/5ksRONqssB7BR161NTtJAm&offset=0&limit=1"
+    var queryURL = "https://api.spotify.com/v1/search?query=" + song + "&type=track&artist/5ksRONqssB7BR161NTtJAm&offset=0&limit=1";
     getspotify.search({
         type: 'track',
         query: song,
