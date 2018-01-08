@@ -8,4 +8,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 -gets movie details from OMDB (The Open Movie Database)
 -follows text written in 'random.txt'
 
+<a href="//gifs.com/embed/liri-node-app-L85xR4"><img src="https://j.gifs.com/L85xR4.gif" title="liri-node-app"/></a>
 
+
+demo at: https://www.youtube.com/watch?v=7ph2Xw2cDeA
