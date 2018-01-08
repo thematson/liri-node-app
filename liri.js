@@ -31,8 +31,8 @@ switch (arg2) {
 }
 
 //spotify function... obviously
-function spotifyThis() {    
-    //my keys   
+function spotifyThis() {
+    //my keys
     var getspotify = new spotify({
         id: '51ac52b96efd4eaca71848d0659f69a7',
         secret: '23b747190f3441199b2b75f2e0f65a2c'
@@ -66,7 +66,7 @@ function spotifyThis() {
         var dataInfo = data.tracks.items[0];
         console.log('');
         console.log('༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽');
-        console.log('');   
+        console.log('');
         console.log('The name of the artist is ' + dataInfo.artists[0].name);
         console.log('The name of the song is ' + dataInfo.name);
         if (dataInfo.preview_url != null) {
@@ -77,10 +77,10 @@ function spotifyThis() {
         console.log('This song is from the album ' + dataInfo.album.name);
         console.log('');
         console.log('༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽');
-        console.log('');   
+        console.log('');
     });
 }
-  //twitter function  
+  //twitter function
 function myTweets() {
 //go gets the keys
     var twitterKeys = require('./keys.js');
@@ -100,7 +100,7 @@ function myTweets() {
     });
 }
 
-// movie function 
+// movie function
 function movieThis() {
     // first part if if/else considers multi-worded titles (similar to spotify)
     if (argv.length >= 4) {
@@ -110,7 +110,7 @@ function movieThis() {
             } else {
                 movie += argv[i];
             }
-        } 
+        }
     //considers anything that has been previously read from random.txt
     } else if (movie != "") {
         movie = movie;
@@ -129,10 +129,9 @@ function movieThis() {
             // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
             console.log('');
             console.log('༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽');
-            console.log('');                
+            console.log('');
             console.log("Title of the movie: " + JSON.parse(body).Title);
             console.log('');
-            console.log("!!!! I can't believe this is the movie you chose!!!!!");
             console.log('');
             console.log("Year the movie came out: " + JSON.parse(body).Year);
             console.log("IMDB Rating of the movie: " + JSON.parse(body).imdbRating);
@@ -141,7 +140,7 @@ function movieThis() {
             console.log("Language of the movie: " + JSON.parse(body).Language);
             console.log("Plot of the movie: " + JSON.parse(body).Plot);
             console.log("Actors in the movie: " + JSON.parse(body).Actors);
-            console.log('');                
+            console.log('');
             console.log('༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽');
             console.log('');
 
@@ -162,16 +161,16 @@ function doThis() {
                 movie = dataArr[1];
                 movieThis();
                 break;
-        
+
             case 'my-tweets':
                 myTweets();
                 break;
-        
+
             case 'spotify-this-song':
                 song = dataArr[1];
-                spotifyThis();                
+                spotifyThis();
                 break;
-        
+
             case 'do-what-it-says':
                 doThis();
                 break;
